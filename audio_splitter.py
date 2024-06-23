@@ -40,7 +40,7 @@ def split_audio(file_path, output_dir, chunk_duration=3.0, sr=22050, start_index
         return index
     
     except Exception as e:
-        print(f"File can not be processed. {file_path}: {e}")
+        pass
         return start_index
 
 def process_directory(input_dir, output_dir, chunk_duration=3.0, sr=22050):
